@@ -13,25 +13,35 @@
         </header>
         <form>
             <div class="form-group">
-                <label id="name-label" for="name">Name</label>
+                <p>Title</p>
+                <label><input name="title" value="mr" type="radio" class="input-radio" checked>Mr.</label>
+                <label><input name="title" value="mrs" type="radio" class="input-radio">Mrs.</label>
+                <label><input name="title" value="miss" type="radio" class="input-radio">Miss.</label>
+                <label><input name="title" value="dr" type="radio" class="input-radio">Dr.</label>
+            </div>
+            <div class="form-group">
+                <label id="firstname" for="first-name">First Name</label>
                 <input
                     type="text"
-                    name="name"
+                    name="first-name"
                     class="form-control"
-                    placeholder="Enter your name"
+                    placeholder="Enter your first name"
                     required
                 />
             </div>
             <div class="form-group">
-                <label id="email-label" for="email">Email</label>
+                <label id="lastname" for="last-name">Last Name</label>
                 <input
-                    type="email"
-                    name="email"
-                    id="email"
+                    type="text"
+                    name="last-name"
                     class="form-control"
-                    placeholder="Enter your email"
+                    placeholder="Enter your last name"
                     required
                 />
+            </div>
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday" max="2022-12-31">
             </div>
             <div class="form-group">
                 <label id="number-label" for="number">Age</label>
@@ -46,11 +56,19 @@
                 />
             </div>
             <div class="form-group">
-                <p>Title</p>
-                <label><input name="title" value="mr" type="radio" class="input-radio" checked>Mr.</label>
-                <label><input name="title" value="mrs" type="radio" class="input-radio">Mrs.</label>
-                <label><input name="title" value="miss" type="radio" class="input-radio">Miss.</label>
-                <label><input name="title" value="dr" type="radio" class="input-radio">Dr.</label>
+                <label id="email-label" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                />
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
             </div>
             <div class="form-group">
                 <p>Employment</p>
@@ -71,8 +89,20 @@
                 <label><input name="hobbies" value="theater" type="checkbox" class="input-checkbox">Theater</label>
                 <label><input name="hobbies" value="music" type="checkbox" class="input-checkbox">Music</label>
             </div>
+            <div class="form-group">
+                <p>Rate your happiness on a scale from 1 to 10</p>
+                <label for="slider"></label>
+                1<input type="range" step="10" value="100">10
+            </div>
             
+            <div class="form-group">
+                <p>Explain your happiness rating</p>
+                <textarea id="comments" name="comment" placeholder="Enter comments here"></textarea>
+            </div>
 
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
             
         </form>
     </div>

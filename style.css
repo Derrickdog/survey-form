@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    /*color: #f3f3f3;*/
+    color: #f3f3f3;
     margin: 58px;
     display: flex;
     justify-content: center;
@@ -10,9 +10,18 @@ body{
     background-attachment: fixed;
 }
 
+.container{
+    width: 540px;
+    background: rgba(27, 27, 50, 0.8);
+    padding: 64px;
+}
+
 h1{
     text-align: center;
-    
+}
+
+p{
+    margin: 0;
 }
 
 label{
@@ -20,8 +29,8 @@ label{
     align-items: center;
 }
 
-p{
-    margin: 0;
+.form-group{
+    padding: 10px;
 }
 
 .form-control {
@@ -34,21 +43,18 @@ p{
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     font-family: inherit;
-  }
-
-  .form-group{
-      padding: 10px;
-  }
-
-.container{
-    width: 540px;
-    background: rgba(27, 27, 50, 0.8);
-    padding: 64px;
-    color: white;
 }
 
 #slider{
     width: 100%;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 textarea{
@@ -69,14 +75,4 @@ button {
     cursor: pointer;
     font-family: inherit;
     border: none;
-}
-
-
-
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
 }

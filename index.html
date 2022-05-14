@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
             </div>
             <div class="form-group">
                 <label for="birthday">Birthday</label>
-                <input type="date" id="birthday" name="birthday" max="2022-12-31">
+                <input type="date" id="birthday" name="birthday" class="form-control" max="2022-12-31">
             </div>
             <div class="form-group">
                 <label id="number-label" for="number">Age</label>
@@ -68,7 +69,7 @@
             </div>
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone">
+                <input type="tel" id="phone" class="form-control" name="phone" placeholder="Enter your phone number">
             </div>
             <div class="form-group">
                 <p>Employment</p>
@@ -90,9 +91,22 @@
                 <label><input name="hobbies" value="music" type="checkbox" class="input-checkbox">Music</label>
             </div>
             <div class="form-group">
-                <p>Rate your happiness on a scale from 1 to 10</p>
+                <p>Rate your happiness on a scale from 0 to 10</p>
                 <label for="slider"></label>
-                1<input type="range" step="10" value="100">10
+                <input id="slider" type="range" step="10" value="100">
+                <ul>
+                    <li>0</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                </ul>
             </div>
             
             <div class="form-group">

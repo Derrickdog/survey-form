@@ -6,6 +6,8 @@ body{
     margin: 58px;
     display: flex;
     justify-content: center;
+    background-image: url(moon.jpeg);
+    background-attachment: fixed;
 }
 
 h1{
@@ -45,10 +47,14 @@ p{
     color: white;
 }
 
+#slider{
+    width: 100%;
+}
+
 textarea{
     min-height: 120px;
     width: 100%;
-    padding: 0.625rem;
+    padding: 10px 0 0 10px;
     resize: vertical;
     font-family: inherit;
 }
@@ -57,16 +63,15 @@ button {
     display: block;
     width: 100%;
     padding: 0.75rem;
-    background: #37af65;
+    background: #1074FF;
     color: white;
     border-radius: 2px;
     cursor: pointer;
     font-family: inherit;
+    border: none;
 }
 
-#slider{
-    width: 100%;
-}
+
 
 ul{
     list-style: none;

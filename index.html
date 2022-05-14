@@ -13,7 +13,7 @@
         </header>
         <form>
             <div class="form-group">
-                <label id="name-label" for="name">Name*</label>
+                <label id="name-label" for="name">Name</label>
                 <input
                     type="text"
                     name="name"
@@ -23,7 +23,7 @@
                 />
             </div>
             <div class="form-group">
-                <label id="email-label" for="email">Email*</label>
+                <label id="email-label" for="email">Email</label>
                 <input
                     type="email"
                     name="email"
@@ -46,9 +46,16 @@
                 />
             </div>
             <div class="form-group">
+                <p>Title</p>
+                <label><input name="title" value="mr" type="radio" class="input-radio" checked>Mr.</label>
+                <label><input name="title" value="mrs" type="radio" class="input-radio">Mrs.</label>
+                <label><input name="title" value="miss" type="radio" class="input-radio">Miss.</label>
+                <label><input name="title" value="dr" type="radio" class="input-radio">Dr.</label>
+            </div>
+            <div class="form-group">
                 <p>Employment</p>
                 <select id="dropdown" name="role" class="form-control" required>
-                    <option disabled selected value>Selecture current employment status</option>
+                    <option disabled selected value>Select current employment status</option>
                     <option value="student">Student</option>"
                     <option value="full">Full Time Job</option>"
                     <option value="part">Part Time Job</option>"
@@ -57,17 +64,16 @@
                 </select>
             </div>
             <div class="form-group">
-                <p>Would you recommend our services</p>
-                <label>
-                    <input name="recommend" value="yes" type="radio" class="input-radio" checked>Yes
-                </label>
-                <label>
-                    <input name="recommend" value="maybe" type="radio" class="input-radio">Maybe
-                </label>
-                <label>
-                    <input name="recommend" value="no" type="radio" class="input-radio">No
-                </label>
+                <p>Hobbies (Select all that apply)</p>
+                <label><input name="hobbies" value="sports" type="checkbox" class="input-checkbox">Sports</label>
+                <label><input name="hobbies" value="exercise" type="checkbox" class="input-checkbox">Exercise</label>
+                <label><input name="hobbies" value="video-games" type="checkbox" class="input-checkbox">Video Games</label>
+                <label><input name="hobbies" value="theater" type="checkbox" class="input-checkbox">Theater</label>
+                <label><input name="hobbies" value="music" type="checkbox" class="input-checkbox">Music</label>
             </div>
+            
+
+            
         </form>
     </div>
 </body>
